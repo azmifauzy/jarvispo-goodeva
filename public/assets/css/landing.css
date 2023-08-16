@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* SEMANTIC COLOR */
+
+body {
+  overflow: hidden;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 5px #202020;
+}
+
+.container-fluid {
+  width: default;
+  margin: auto;
+}
+
+/*=================================*/
+nav {
+  position: relative;
+  z-index: 999;
+  background-color: black;
+}
+
+.navbar-brand {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: #ff8383 !important;
+}
+
+.nav-item {
+  font-family: "Acme", sans-serif;
+  font-size: 18px;
+  margin-right: 15px;
+  color: white;
+}
+
+.navbar-nav a:hover {
+  color: #ff8383 !important;
+}
+
+.btnHome {
+  color: white;
+}
+.btnJoin {
+  border: 1px solid;
+  width: 100%;
+  font-weight: bold;
+  background: transparent;
+}
+
+.btnJoin:hover {
+  border: 1px solid white;
+  background: white;
+}
+
+/*=====*/
+
+.banner {
+  height: 101vh;
+  position: relative;
+  background-image: url("/assets/images/banner.jpg");
+  background-size: cover;
+  background-position: none;
+  background-repeat: no-repeat;
+  top: -90px;
+  z-index: 1;
+}
+
+.banner .container h1 {
+  padding-top: 100px;
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.banner .container input {
+  padding: 10px;
+  margin-right: 0;
+  box-shadow: inset 0 0px 0 #ddd;
+}
+
+.banner .container .mostpopular a {
+  color: white;
+  border: 1px solid;
+  padding: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+.banner .container .mostpopular a:hover {
+  color: #eee;
+}
+
+@media (min-width: 992px) {
+  nav {
+    position: relative;
+    z-index: 999;
+    background: none;
+  }
+  .btnJoin {
+    border: 1px solid;
+    width: 100px;
+    font-weight: bold;
+    background: transparent;
+  }
+  .banner {
+    background-position: bottom;
+  }
+  .banner .container h1 {
+    padding-top: 150px;
+    font-family: "Acme", sans-serif;
+    font-size: 50px;
+    color: white;
+  }
+  .banner .container input {
+    padding: 10px;
+    margin-right: 330px;
+    box-shadow: inset 0 0px 0 #ddd;
+  }
+}
